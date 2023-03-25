@@ -12,7 +12,7 @@ for (int i = 0; i < array.Length; i++)
 size= 0;
 foreach (var a in array)
 {
-    if (a.Length>=3)
+    if (a.Length<=3)
     {
         size++;
     }
@@ -21,7 +21,7 @@ string[] array2 = new string[size];
 int tmp = 0;
 foreach (var a in array)
 {
-    if (a.Length >= 3)
+    if (a.Length <= 3)
     {
         array2[tmp] = a;
         tmp++;
